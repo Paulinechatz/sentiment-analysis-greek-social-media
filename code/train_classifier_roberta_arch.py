@@ -20,10 +20,10 @@ parser.add_argument('--sentiment', type=str, help='sentiment field in the datase
 parser.add_argument('--arch', type=str, help='Model Architecture', default='1')
 parser.add_argument('--class_weights', type=int, help='Class weights for imbalanced dataset', default=1)
 parser.add_argument('--smax', type=int, help='Softmax activation', default=0)
-parser.add_argument('--ln', type=int, help='Layer Nomralization', default=0)
+parser.add_argument('--ln', type=int, help='Layer Nomralization', default=1)
 
 parser.add_argument('--dropout', type=float, help='Layer dropout rate', default=0.1)
-parser.add_argument('--dim', type=int, help='Hidden Layer dimension', default=64)
+parser.add_argument('--dim', type=int, help='Hidden Layer dimension', default=768)
 
 parser.add_argument('--epochs', type=int, help='Number of epochs', default=5)
 parser.add_argument('--lr', type=float, help='Learning rate', default=0.001)
